@@ -2,19 +2,20 @@
 
 A simple script to display the battery percentage and status (charging, discharging, or low battery) in your i3blocks status bar. Supports systems with one or two batteries.
 
-## Features
+## 🔋 Features
 
+- Interactive button allowing user to check the remaining battery time by left-clicking.
 - Displays the combined battery percentage for systems with multiple batteries.
 - Shows charging status with an icon (`⚡`).
 - Alerts for low battery levels with an icon (`🔋`).
 - Works seamlessly with i3blocks on Arch Linux or any Linux distribution using `i3wm`.
 
-## Requirements
+## 📋 Prerequisites
 
 - Linux system with `i3wm` and `i3blocks` installed.
 - Battery information available under `/sys/class/power_supply/BAT0` and `/sys/class/power_supply/BAT1` (or only `BAT0` for single-battery systems).
 
-## Installation
+## 🛠️ Installation
 
 ### 1. Clone the Repository
 
@@ -51,7 +52,7 @@ Reload i3blocks to apply the changes:
 pkill -SIGRTMIN+10 i3blocks
 ```
 
-## How It Works
+## 🖱️ How It Works
 
 - The script checks the battery status and capacity for `/sys/class/power_supply/BAT0` and `/sys/class/power_supply/BAT1`.
 - If multiple batteries are present, it calculates the average percentage.
